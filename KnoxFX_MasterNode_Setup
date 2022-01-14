@@ -47,7 +47,7 @@ Assumptions:
   Expected Outcome: You have "KFX Core - Wallet" running and visible in the user interface
   
   --------------------------------------------------------------
-  ![Wallet](https://github.com/LEAPNODE/LEAPNODE/blob/main/kfx_images/kfx_wallet_receive.PNG)
+  ![Wallet](https://github.com/LEAPNODE/LEAPNODE/blob/e74511d62466fb53d29419e2a908cdcbd4516a10/kfx_images/kfx_wallet_receive.PNG)
   
   Step 2: Add 1000 KFX to Wallet
    - This assumes you have purchased 1001 or 1002 KXF coins from an exchange.  1000 KFX coins are required for the masternode collateral. 1 or 2 for network fees.
