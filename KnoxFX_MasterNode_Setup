@@ -1,0 +1,68 @@
+
+**** DRAFT ****
+
+**** This is in no way an endorcement for KnoxFX.  Please do your homework and understand the risks.  I have no role or formal associations with in the KnoxFS team. ****
+
+The basis for this set of instructions was provided by RobinK_1978 in the KnoxFX Discord Channel (KFX_Masternode_Setup_manual_3_1).  Checkout https://knoxfs.com/#support
+
+KnoxFX Masternode Setup Guide
+
+Assumptions: 
+ - Faimiliar with Ubuntu 20.04 command line interface
+ - Familiar with Windows or Mac
+ - Understand what a masternode is
+ - At least browsed through the White Paper found at https://knoxfs.com
+ - Understand where to purchase KFX coin and how to transfer to a wallet
+ 
+ Requirements:
+ - Computer with a minimum specification:
+     - 2 core or higher CPU
+     - 10GB of ROM storage
+     - 500GB of available throughput with your Internet Service Provider (ISP)
+     - No speed requirements for hardware or internet connection.  Let's assume a 56K modem will not do it but DSL, copper or fiber internet connection.
+ 
+ Optional:
+  - Virtual Private Server hosted by a 3rd party
+  - 
+ 
+ Step 1: Install Wallet
+  - A single Unbuntu machine with the wallet and node is allowed
+  - A computer running the wallet (Windows, Mac or Linux) and a seprarate computer running Ubuntu for the node is allowed.
+  
+  a) Go to https://knoxfs.com/
+  b) At the top, view "Wallets" drop down
+  c) Select a wallet based on the operating system
+  d) Follow instructions based on operating system below
+  
+  Windows:
+  a) Open "knoxfs-qt-Win64" ZIP file
+  b) Extract "knoxfs-qt"
+    - Note: Find a place you can remember its location.  This will launch the wallet going forward.
+  c) Double clock on "knoxfs-qt"  
+   - This launches the wallet with installation instuctions
+  c) Select default data directory or custom data directory 
+    - Note: 1 GB of storage is required
+  d) Read and select the right arrow until the wallet UI appears
+  
+  Expected Outcome: You have "KFX Core - Wallet" running and visible in the user interface
+  
+  
+  Step 2: Add 1000 KFX to Wallet
+   - This assumes you have purchased 1001 or 1002 KXF native coins from an exchange.  1000 is required for the masternode collateral. 1 or 2 for network fees.
+   
+   a) In the Wallet, select "RECEIVE" from the left side menu
+   b) Select "Copy" 
+    - Note: If using a mobile device, the exchange or mobile wallet may allow scanning the QR code
+   c)  Open the wallet or exchange wallet and go to "Withdraw"
+    - Wallets and Exhanges are all different. Look for the ability to withdraw KFX native coin
+   d) Use the receive address from the KFX Core and send 1001 or 1002
+   
+   Expected Outcome:  After 16 confirmations, the KFX coins appear in the "KFX Core - Wallet" wallet.  
+   
+   
+   
+   
+  
+  
+   
+ 
