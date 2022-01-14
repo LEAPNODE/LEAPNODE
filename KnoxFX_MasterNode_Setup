@@ -48,7 +48,7 @@ Assumptions:
   
   
   Step 2: Add 1000 KFX to Wallet
-   - This assumes you have purchased 1001 or 1002 KXF native coins from an exchange.  1000 is required for the masternode collateral. 1 or 2 for network fees.
+   - This assumes you have purchased 1001 or 1002 KXF coins from an exchange.  1000 KFX coins are required for the masternode collateral. 1 or 2 for network fees.
    
    a) In the Wallet, select "RECEIVE" from the left side menu
    b) Select "Copy" 
