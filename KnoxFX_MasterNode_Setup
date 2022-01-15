@@ -1,7 +1,7 @@
 
 **** DRAFT ****
 
-**** **This is in no way an endorcement for KnoxFS.**  Please do your homework and understand the risks.  I have no role or formal associations with in the KnoxFS team. ****
+**** This is in no way an endorcement for KnoxFS.  Please do your homework and understand the risks.  I have no role or formal associations with in the KnoxFS team. ****
 
 The basis for this set of instructions was provided by RobinK_1978 in the KnoxFX Discord Channel (KFX_Masternode_Setup_manual_3_1).  Checkout https://knoxfs.com/#support
 
@@ -26,7 +26,7 @@ Assumptions:
       - The KFX node explorer isn't currently showing IP addresses.  If you have concern publishing your IP address, VPS will work better.
       - If your local community has a VPS provider, see if they can provide that VPS service!  Just do a little homework to ensure the VPS can be available 24 hours a day.
       
- --------------------------------------------------------------
+--------------------------------------------------------------
  
  Step 1: Install Wallet
   
@@ -50,11 +50,11 @@ Assumptions:
   
   Expected Outcome: You have "KFX Core - Wallet" running and visible in the user interface
   
-  --------------------------------------------------------------
-  ![Wallet](https://github.com/LEAPNODE/LEAPNODE/blob/e74511d62466fb53d29419e2a908cdcbd4516a10/kfx_images/kfx_wallet_receive.PNG)
-  
-  Step 2: Add 1000 KFX to Wallet
-   - This assumes you have purchased 1001 or 1002 KXF coins from an exchange.  1000 KFX coins are required for the masternode collateral. 1 or 2 for network fees.
+--------------------------------------------------------------
+
+Step 2: Add 1000 KFX to Wallet
+   - This assumes you have purchased 1001 or 1002 KXF coins from an exchange.  1000 KFX coins are required for the masternode collateral. 1 or 2 for network fees
+   - Given the somewhat low trade volume, it may take some time to get 1000 KFX coins
    
    a) In the Wallet, select "RECEIVE" from the left side menu
    b) Select "Copy" 
@@ -65,9 +65,9 @@ Assumptions:
    
    Expected Outcome:  After 16 confirmations, the KFX coins appear in the "KFX Core - Wallet" wallet.  
    
-   --------------------------------------------------------------
+--------------------------------------------------------------
    
-   Step 3: Backup & Encrypt Wallet 
+Step 3: Backup & Encrypt Wallet 
    
      a) In the KFX Core Wallet, select "Settings".
      b) Select "Wallet"
@@ -77,15 +77,36 @@ Assumptions:
    
    Expected Outcome:  KFX Core - Wallet application will exit (Windows) and encrypt the wallet.
    
-   --------------------------------------------------------------
+--------------------------------------------------------------
    
-   Step 4: Get Configuration File and Masternode Key
+Step 4: Get Configuration File and Masternode Key
+   Prerequisite - I believe the coins need to be confirmed in the wallet before performing this step.  May not be the case, but no downside to getting confirmations.
    
-     a) In KFX Core - Wallet application, select "Settings"
+     a) In Windows 10, go to the search bar and type in "run".  Alternatively, press Windows key + r
+     b) Type %appdata% in the run prompt and then enter
+     c) Open the "KFX" folder, then open masternode.conf in notebook or an editor that won't change the file extension
+      - Leave open, you are going to copy and paste values into masternode.conf file
+      
+     d) In "KFX Core - Wallet" application, select "Settings" from left menu
      b) Select "Debug", then "Console"
-     c) Type in 
+     c) Type in getmasternodeoutputs
+     d) TBD 
      
-   
+     
+     
+     
+--------------------------------------------------------------
+
+Step 5: Connect to Masternode and Setup
+     a) If using a remote VPS, get signed up, wait for the email containing the login credentials
+     b) For either remote VPS or your own linux computer, install Putty or favorite SSH client.  Connect to the linux computer
+     c) Type and run: sudo apt-get udpate && apt-get upgrade
+     d) sudo apt install unzip
+     e) sudo apt install mc
+     f) Go to https://github.com/KnoxFS/ and find the latest version of Wallet. Usually "Wallet-5.x.x.x" repository and the file "kfx-5.x.x-x86_64-linux-gnu.zip"
+     g) Copy link to the latest version of the file ending with "x86_64-linux-gnu.zip
+     h) In the Putty linux command line terminal, navigate to a folder you want to store the "Wallet-5.x.x.x" file
+     i) Type and run: wget <paste_url>.  Example: wget https://github.com/KnoxFS/Wallet-5.3.2.0/releases/download/v5.3.3/kfx-5.3.3-x86_64-linux-gnu.zip
   
    
   
