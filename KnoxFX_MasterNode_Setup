@@ -1,7 +1,7 @@
 
 **** DRAFT ****
 
-**** This is in no way an endorcement for KnoxFS.  Please do your homework and understand the risks.  I have no role or formal associations with in the KnoxFS team. ****
+**** **This is in no way an endorcement for KnoxFS.**  Please do your homework and understand the risks.  I have no role or formal associations with in the KnoxFS team. ****
 
 The basis for this set of instructions was provided by RobinK_1978 in the KnoxFX Discord Channel (KFX_Masternode_Setup_manual_3_1).  Checkout https://knoxfs.com/#support
 
@@ -23,9 +23,13 @@ Assumptions:
  
  Optional:
   - Virtual Private Server hosted by a 3rd party
-  - 
+      - The KFX node explorer isn't currently showing IP addresses.  If you have concern publishing your IP address, VPS will work better.
+      - If your local community has a VPS provider, see if they can provide that VPS service!  Just do a little homework to ensure the VPS can be available 24 hours a day.
+      
+ --------------------------------------------------------------
  
  Step 1: Install Wallet
+  
   - A single Unbuntu machine with the wallet and node is allowed
   - A computer running the wallet (Windows, Mac or Linux) and a seprarate computer running Ubuntu for the node is allowed.
   
@@ -61,8 +65,28 @@ Assumptions:
    
    Expected Outcome:  After 16 confirmations, the KFX coins appear in the "KFX Core - Wallet" wallet.  
    
+   --------------------------------------------------------------
    
+   Step 3: Backup & Encrypt Wallet 
    
+     a) In the KFX Core Wallet, select "Settings".
+     b) Select "Wallet"
+     c) In the "Backup Wallet" page, select a file location and save the wallet in a place you can remember
+     d) Encrypt the wallet by adding a paraphrase (password)
+     e) (recommended) Make a copy of the .dat wallet file in another location in case the original gets corrupted
+   
+   Expected Outcome:  KFX Core - Wallet application will exit (Windows) and encrypt the wallet.
+   
+   --------------------------------------------------------------
+   
+   Step 4: Get Configuration File and Masternode Key
+   
+     a) In KFX Core - Wallet application, select "Settings"
+     b) Select "Debug", then "Console"
+     c) Type in 
+     
+   
+  
    
   
   
