@@ -11,7 +11,7 @@ Assumptions:
  - Faimiliar with Ubuntu 20.04 command line interface
  - Familiar with Windows or Mac
  - Understand what a masternode is
- - At least browsed through the White Paper found at https://knoxfs.com
+ - At least browsed through the White Paper found at https://knoxfs.com .  Best to read it fully.
  - Understand where to purchase KFX coin and how to transfer to a wallet
  
  Requirements:
@@ -52,9 +52,11 @@ Assumptions:
   
 --------------------------------------------------------------
 
-Step 2: Add 1000 KFX to Wallet
+Step 2: Add 1000 KFX to Wallet as Collateral
    - This assumes you have purchased 1001 or 1002 KXF coins from an exchange.  1000 KFX coins are required for the masternode collateral. 1 or 2 for network fees
-   - Given the somewhat low trade volume, it may take some time to get 1000 KFX coins
+   - Given the somewhat low trade volume, it may take some time to get 100x KFX coins
+   - I usually send a test of 1 or less coins to the wallet for testing.  This is usually a good thing to do.  BUT you must send at least 1000 KFX in a single transaction.  Why?
+     A transaction ID will be entered later that will confirm >= 1000 KFX have been provided to the node
    
    a) In the Wallet, select "RECEIVE" from the left side menu
    b) Select "Copy" 
@@ -64,6 +66,12 @@ Step 2: Add 1000 KFX to Wallet
    d) Use the receive address from the KFX Core and send 1001 or 1002
    
    Expected Outcome:  After 16 confirmations, the KFX coins appear in the "KFX Core - Wallet" wallet.  
+   
+   Step 2.1) SAVE: Transaction ID (TX ID)take the receiving address 
+       a) In the "KFX Core - Wallet", go to "Home" tab on the left menu
+       b) Select the transaction and a popup/modal will appear
+       c) Copy the "ID" value and save in a text editor like "Notepad"
+       - Note: This also shows if "Status".  "Status" should be "Confirmed" before Step 4
    
 --------------------------------------------------------------
    
@@ -110,8 +118,16 @@ Step 5: Connect to Masternode and Setup
      j) Type and run: ls 
        - If the files appear bright green, go to next step
        - If the files do not appear bright green, type and run: sudo chmod +x knoxfx*
-     k) 
-  
+
+--------------------------------------------------------------
+
+Step 6: Start the Directories and Syncronize Blockchain
+    a) In the Putty SSH terminal, type "./knoxfsd"
+    b) A lot of data will appear in the window.  There may be errors which according to the KFX_Masternode_Setup_manual_3_1 are acceptable due to the wallet yet to be setup
+    c) This will take several minutes to syncronize the blockchain.  Please wait till completion before proceeding.
+    
+--------------------------------------------------------------
+
    
   
   
